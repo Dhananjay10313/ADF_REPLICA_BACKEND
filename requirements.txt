@@ -4,6 +4,7 @@ pymongo
 pydantic
 httpx
 nbformat
+scikit-learn
 pusher
 uvicorn
 pandas
