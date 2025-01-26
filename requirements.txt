@@ -5,7 +5,7 @@ pydantic==2.1.1
 python-dotenv==1.0.0
 pymongo==4.3.3
 httpx==0.24.0
-pusher==4.0.0
+pusher
 nbformat==5.7.0
 pandas==1.5.3
 scikit-learn==1.2.0
