@@ -13,3 +13,13 @@ matplotlib
 aiofiles
 tornado
 pytest
+fastapi
+sqlalchemy
+pymongo
+pydantic
+httpx
+nbformat
+pusher
+uvicorn
+pandas
+pyodbc
