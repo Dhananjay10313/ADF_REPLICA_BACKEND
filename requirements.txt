@@ -1,3 +1,4 @@
+pywin32==228
 fastapi
 sqlalchemy
 pymongo
