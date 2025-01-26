@@ -15,6 +15,7 @@ tornado
 pytest
 fastapi
 sqlalchemy
+python-multipart
 pymongo
 pydantic
 httpx
