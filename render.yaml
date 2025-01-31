@@ -1,14 +1,6 @@
 services:
-  - type: web
-    name: ADF_REPLICA_BACKEND
-    env: python
-    buildCommand: |
-      apt-get update
-      apt-get install -y curl apt-transport-https
-      curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
-      curl https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/prod.list > /etc/apt/sources.list.d/mssql-release.list
-      apt-get update
-      ACCEPT_EULA=Y apt-get install -y msodbcsql17
-      apt-get install -y unixodbc-dev
-      pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port 8000
+  - name: ADF_REPLICA_BACKEND
+    type: web
+    env: docker
+    repo: https://github.com/Dhananjay10313/ADF_REPLICA_BACKEND.git
+    plan: free
