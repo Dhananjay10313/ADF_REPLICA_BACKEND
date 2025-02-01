@@ -6,5 +6,8 @@ curl https://packages.microsoft.com/config/ubuntu/20.04/prod.list > /etc/apt/sou
 apt-get update && \
 ACCEPT_EULA=Y apt-get install -y msodbcsql17 unixodbc-dev
 
+# Add this to your Dockerfile or build.sh
+RUN odbcinst -q -d
+
 # Install Python dependencies
 pip install -r requirements.txt
